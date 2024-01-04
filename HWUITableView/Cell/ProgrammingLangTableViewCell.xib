@@ -30,13 +30,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1g-U8-3gs">
+                                <rect key="frame" x="364" y="35" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9sC-Gc-msS"/>
+                                    <constraint firstAttribute="width" constant="50" id="xui-wb-SC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="h1g-U8-3gs" firstAttribute="top" secondItem="FmY-fY-Kc7" secondAttribute="top" constant="35" id="1Fo-av-qdF"/>
                             <constraint firstAttribute="bottom" secondItem="38V-2B-ebZ" secondAttribute="bottom" constant="28" id="BId-5o-3Hl"/>
                             <constraint firstItem="38V-2B-ebZ" firstAttribute="leading" secondItem="FmY-fY-Kc7" secondAttribute="leading" constant="30" id="Q7w-Lz-W6p"/>
+                            <constraint firstAttribute="trailing" secondItem="h1g-U8-3gs" secondAttribute="trailing" constant="30" id="Xog-64-aqF"/>
                             <constraint firstAttribute="width" constant="444" id="hQz-Ck-k8c"/>
                             <constraint firstItem="38V-2B-ebZ" firstAttribute="top" secondItem="FmY-fY-Kc7" secondAttribute="top" constant="30" id="r0r-Nr-3cq"/>
+                            <constraint firstAttribute="bottom" secondItem="h1g-U8-3gs" secondAttribute="bottom" constant="28" id="wMA-Tn-met"/>
                             <constraint firstAttribute="height" constant="88" id="xhv-Cn-PHy"/>
                         </constraints>
                     </view>
@@ -50,6 +63,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="numberLabel" destination="h1g-U8-3gs" id="fqm-wm-OOH"/>
                 <outlet property="progLangLabel" destination="38V-2B-ebZ" id="NQH-Lm-4Vx"/>
             </connections>
             <point key="canvasLocation" x="195.41984732824426" y="4.2253521126760569"/>

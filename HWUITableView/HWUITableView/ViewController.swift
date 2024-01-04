@@ -39,7 +39,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let programmLang = programmingLanguages[indexPath.row] //на каждую ячейку
         cellIndex.append(indexPath.row)
         cellSection.append(indexPath.section)
-        cell.configure(language: programmLang, index: indexPath.row, section: indexPath.section)
+        cell.configure(language: programmLang, index: indexPath.row, section1: indexPath.section, section2: indexPath.section)
       //  cell.textLabel.text = [tableCellTitle objectAtIndex:indexPath.section];
         return cell
     }
@@ -49,6 +49,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         programmingLanguages[section].header
+       
       }
     
 }

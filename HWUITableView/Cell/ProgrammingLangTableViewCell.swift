@@ -17,9 +17,10 @@ class ProgrammingLangTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func configure(language: Language, index: Int, section: Int) {
+    func configure(language: Language, index: Int, section1: Int, section2: Int) {
         progLangLabel.text = language.languageName
         numberLabel.text = String(index)
-        sectionLabel.text = String(section)
+        sectionLabel.text = String(section1)
+        sectionLabel.text = String(section2)
     }
 }

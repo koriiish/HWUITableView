@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     var programmingLanguages: [Language] = []
     var cellIndex: [Int] = []
+    var cellSection: [Int] = []
     /*["JavaScript", "Python", "C#", "C++", "Swift", "Ruby", "Java", "Dart", "Kotlin", "Go" ]*/
     let jsonDecoder = LocalJSONParser()
     @IBOutlet weak var tableView: UITableView!
@@ -37,13 +38,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProgrammingLangTableViewCell", for: indexPath) as! ProgrammingLangTableViewCell
         let programmLang = programmingLanguages[indexPath.row] //на каждую ячейку
         cellIndex.append(indexPath.row)
-        cell.configure(language: programmLang, index: indexPath.row)
+        cellSection.append(indexPath.section)
+        cell.configure(language: programmLang, index: indexPath.row, section: indexPath.section)
+      //  cell.textLabel.text = [tableCellTitle objectAtIndex:indexPath.section];
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 125.0
     }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        programmingLanguages[section].header
+      }
     
 }
 

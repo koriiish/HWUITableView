@@ -1,6 +1,7 @@
 [
     {
         "languageName": "JavaScript",
+        "header": "Homework"
     },
     {
         "languageName": "Python",
@@ -28,5 +29,35 @@
     },
     {
         "languageName": "Go",
+    },
+    {
+        "languageName": "Groovy",
+    },
+    {
+        "languageName": "Scala",
+    },
+    {
+        "languageName": "Apex",
+    },
+    {
+        "languageName": "Elixir",
+    },
+    {
+        "languageName": "Rust",
+    },
+    {
+        "languageName": "C",
+    },
+    {
+        "languageName": "1C",
+    },
+    {
+        "languageName": "DB",
+    },
+    {
+        "languageName": "TypeScript",
+    },
+    {
+        "languageName": "PHP",
     }
     ]

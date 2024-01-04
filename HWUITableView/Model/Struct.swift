@@ -9,4 +9,6 @@ import Foundation
 
 struct Language: Codable {
     let languageName: String?
+    let header: String?
+    let section: Int?
     }

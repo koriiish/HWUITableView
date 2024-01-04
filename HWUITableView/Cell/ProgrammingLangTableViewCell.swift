@@ -11,13 +11,15 @@ class ProgrammingLangTableViewCell: UITableViewCell {
     
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var progLangLabel: UILabel!
+    @IBOutlet weak var sectionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func configure(language: Language, index: Int) {
+    func configure(language: Language, index: Int, section: Int) {
         progLangLabel.text = language.languageName
         numberLabel.text = String(index)
+        sectionLabel.text = String(section)
     }
 }
